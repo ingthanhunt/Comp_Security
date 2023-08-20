@@ -12,7 +12,7 @@ def substitute(word, i, n, tmp):
     start_time = time.time()
     hash_value = hashlib.sha1(bytes(tmp, 'utf-8')).hexdigest()
     end_time = time.time()
-    timer['total_time'] = end_time - start_time
+    timer['total_time'] += end_time - start_time
     timer['count'] += 1
     rainbow_table.append([tmp, hash_value])
     if hash_value == target:
