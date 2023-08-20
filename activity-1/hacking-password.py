@@ -37,7 +37,7 @@ df = pd.DataFrame(rainbow_table)
 df.to_csv('activity-1/rainbow_table.csv', index=False)
 end_time = time.time()
 total_time = end_time - start_time
-print('Answer#2 -> time for creat a rainbow table :', total_time)
+print('Answer#2 -> time for create a rainbow table :', total_time)
 print('Answer#3 -> average time for perform hash on a password string :', timer['total_time'] / timer['count'])
 
 
